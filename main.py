@@ -24,7 +24,7 @@ def main(page: ft.Page):
     page.appbar = ft.AppBar(
         title=ft.Text("Flet Demo Home Page", color=ft.colors.WHITE),  # a title of white color
         bgcolor=ft.colors.BLUE,  # a blue background color
-        center_title=True  # center the title || without this, the title will be on the left
+        center_title=Tru  # center the title || without this, the title will be on the left
     )
 
     # text that contains the counter number to be incremented
@@ -47,4 +47,4 @@ def main(page: ft.Page):
 
 
 # open a browser tab containing the app | remove the view parameter to open in a native OS window
-ft.app(target=main, view=ft.WEB_BROWSER)
+ft.app(target=main)
